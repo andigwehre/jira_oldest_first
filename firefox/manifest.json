@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+	"name": "JIRA Oldest First",
+	"version": "0.2",
+	"author": "Andreas Grill",
+	"description": "Adds query string to URL to set Action Order to Ascending - use case for JIRA have Oldest First as standard.",
+	"icons" :{
+		"48" : "jira_of_ag48.png",
+		"128" : "jira_of_ag128.png" 
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+  "options_ui": {
+    "page": "options.html"
+  },
+
+  "permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"https://*/*?*",
+		"storage"
+		],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "jira_oldest_first@jof.at"
+    }
+  }
+}
