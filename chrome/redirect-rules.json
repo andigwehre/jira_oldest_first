@@ -3,7 +3,7 @@
     "id": 1,
     "condition": {
       "regexFilter": "^https://([^?]+)$",
-      "requestDomains": ["s.co.at"],
+      "requestDomains": ["google.at"],
       "resourceTypes": ["main_frame"]
     },
     "action": {
